@@ -3,12 +3,15 @@ package com.morrisware.flutter.download
 import android.content.Context
 import androidx.annotation.NonNull
 import com.morrisware.flutter.net.FileDownloader
+import com.morrisware.flutter.net.core.Response
+import com.morrisware.flutter.net.request.FileRequest
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
+import java.io.File
 
 /** FlutterDownloadPlugin */
 class FlutterDownloadPlugin : FlutterPlugin, MethodCallHandler {
@@ -32,7 +35,28 @@ class FlutterDownloadPlugin : FlutterPlugin, MethodCallHandler {
         if (call.method == "download") {
             val url = call.argument<String>("url")
             val tag = call.argument<String>("tag")
-            val isNewDownload = FileDownloader.downloadUrl(context, url, tag, null)
+            val isNewDownload = FileDownloader.downloadUrl(context, url, tag, object : FileRequest.FileResponseCallback() {
+                override fun onSuccess(response: Response<File>?) {
+                    channel.invokeMethod("downloadResponse", mapOf(
+                            Pair("url", url),
+                            Pair("tag", tag),
+                            Pair("type", "onSuccess"),
+                            Pair("path", response?.data?.absolutePath)
+                    ))
+                }
+
+                override fun onFailure(response: Response<File>?) {
+                    channel.invokeMethod("downloadResponse", mapOf(
+                            Pair("url", url),
+                            Pair("tag", tag),
+                            Pair("type", "onFailure"),
+                            Pair("error", response?.error?.message)
+                    ))
+                }
+
+                override fun onFileDownloadProgress(length: Long, contentLength: Long) {
+                }
+            })
             result.success(isNewDownload)
         } else if (call.method == "cancelDownload") {
             val url = call.argument<String>("url")
