@@ -25,9 +25,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d0766c67-55b7-49a9-ba7d-091c560659b3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/morrisware/flutter/download/DownloadHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/morrisware/flutter/download/DownloadHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/morrisware/flutter/download/FlutterDownloadPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/morrisware/flutter/download/FlutterDownloadPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/flutter_download.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_download.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609139521482</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="v0.0.6">
+      <created>1609147408331</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609147408331</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,17 +131,18 @@
     <MESSAGE value="v0.0.3" />
     <MESSAGE value="v0.0.4" />
     <MESSAGE value="v0.0.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.0.5" />
+    <MESSAGE value="v0.0.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.0.6" />
   </component>
   <component name="WindowStateProjectService">
     <state x="709" y="253" key="#com.intellij.ide.util.MemberChooser" timestamp="1609126401695">
       <screen x="0" y="23" width="1792" height="1015" />
     </state>
     <state x="709" y="253" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1015@0.23.1792.1015" timestamp="1609126401695" />
-    <state x="371" y="106" key="CommitChangelistDialog2" timestamp="1609139521312">
+    <state x="371" y="106" key="CommitChangelistDialog2" timestamp="1609147408155">
       <screen x="0" y="23" width="1792" height="1015" />
     </state>
-    <state x="371" y="106" key="CommitChangelistDialog2/0.23.1792.1015@0.23.1792.1015" timestamp="1609139521312" />
+    <state x="371" y="106" key="CommitChangelistDialog2/0.23.1792.1015@0.23.1792.1015" timestamp="1609147408155" />
     <state x="100" y="123" width="1592" height="815" key="DiffContextDialog" timestamp="1609129465586">
       <screen x="0" y="23" width="1792" height="1015" />
     </state>
@@ -157,10 +163,10 @@
       <screen x="0" y="23" width="1792" height="1015" />
     </state>
     <state width="1750" height="130" key="GridCell.Tab.0.right/0.23.1792.1015@0.23.1792.1015" timestamp="1608890308407" />
-    <state x="496" y="270" key="Vcs.Push.Dialog.v2" timestamp="1609139523119">
+    <state x="496" y="270" key="Vcs.Push.Dialog.v2" timestamp="1609147410126">
       <screen x="0" y="23" width="1792" height="1015" />
     </state>
-    <state x="496" y="270" key="Vcs.Push.Dialog.v2/0.23.1792.1015@0.23.1792.1015" timestamp="1609139523119" />
+    <state x="496" y="270" key="Vcs.Push.Dialog.v2/0.23.1792.1015@0.23.1792.1015" timestamp="1609147410126" />
     <state x="588" y="256" width="615" height="548" key="find.popup" timestamp="1608889492439">
       <screen x="0" y="23" width="1792" height="1015" />
     </state>

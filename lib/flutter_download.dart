@@ -105,6 +105,14 @@ class FlutterDownload {
       "interval": duration.inMilliseconds,
     });
   }
+
+  openFile(String path) async {
+    await _channel.invokeMethod("openFile", {"path": path});
+  }
+
+  jumpBrowser(String url) async {
+    await _channel.invokeMethod("jumpBrowser", {"url", url});
+  }
 }
 
 class DownloadStatus {
