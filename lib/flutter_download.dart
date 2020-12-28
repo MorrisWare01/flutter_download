@@ -37,7 +37,8 @@ class FlutterDownload {
             final type = map["type"];
             final path = map["path"];
             final error = map["error"];
-            final callback = _downloadCallbackMap[_downloadKey(url, tag)];
+            final callback =
+                _downloadCallbackMap.remove(_downloadKey(url, tag));
             if (callback != null) {
               if (type == "onSuccess") {
                 callback.onSuccess?.call(path);
@@ -60,6 +61,10 @@ class FlutterDownload {
 
   String _downloadKey(String url, String tag) {
     return url + "-" + tag;
+  }
+
+  void removeDownloadCallback(String url, String tag) {
+    _downloadCallbackMap.remove(_downloadKey(url, tag));
   }
 
   Future<bool> download(
