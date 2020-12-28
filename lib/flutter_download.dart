@@ -60,7 +60,7 @@ class FlutterDownload {
   final Map<String, _DownloadCallback> _downloadCallbackMap = Map();
 
   String _downloadKey(String url, String tag) {
-    return url + "-" + tag;
+    return "$url/$tag";
   }
 
   void removeDownloadCallback(String url, String tag) {

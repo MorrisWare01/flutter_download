@@ -1,8 +1,8 @@
 name: flutter_download
 description: A new flutter plugin project.
-version: 0.0.4
-author:
-homepage:
+version: 0.0.5
+author: MorrisWare01
+homepage: https://github.com:MorrisWare01/flutter_download
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
