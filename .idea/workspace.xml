@@ -4,11 +4,29 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0766c67-55b7-49a9-ba7d-091c560659b3" name="Default Changelist" comment="">
+    <list default="true" id="d0766c67-55b7-49a9-ba7d-091c560659b3" name="Default Changelist" comment="v1.0.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/morrisware/flutter/download/FlutterDownloadPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/morrisware/flutter/download/FlutterDownloadPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +78,17 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v1.0.0" />
     <option name="LAST_COMMIT_MESSAGE" value="v1.0.0" />
@@ -69,10 +98,14 @@
       <screen x="0" y="23" width="1792" height="1015" />
     </state>
     <state x="709" y="253" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1015@0.23.1792.1015" timestamp="1608888463123" />
-    <state x="371" y="106" key="CommitChangelistDialog2" timestamp="1608890289795">
+    <state x="371" y="106" key="CommitChangelistDialog2" timestamp="1609125533223">
       <screen x="0" y="23" width="1792" height="1015" />
     </state>
-    <state x="371" y="106" key="CommitChangelistDialog2/0.23.1792.1015@0.23.1792.1015" timestamp="1608890289795" />
+    <state x="371" y="106" key="CommitChangelistDialog2/0.23.1792.1015@0.23.1792.1015" timestamp="1609125533223" />
+    <state x="100" y="123" width="1592" height="815" key="DiffContextDialog" timestamp="1609125562410">
+      <screen x="0" y="23" width="1792" height="1015" />
+    </state>
+    <state x="100" y="123" width="1592" height="815" key="DiffContextDialog/0.23.1792.1015@0.23.1792.1015" timestamp="1609125562410" />
     <state width="1750" height="130" key="GridCell.Tab.0.bottom" timestamp="1608890308407">
       <screen x="0" y="23" width="1792" height="1015" />
     </state>
