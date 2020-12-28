@@ -79,6 +79,16 @@ class FlutterDownloadPlugin : FlutterPlugin, MethodCallHandler {
                 FileDownloader.clearCache(context, interval)
             }
             result.success(null)
+        } else if (call.method == "openFile") {
+            val path = call.argument<String>("path")
+            if (!path.isNullOrEmpty()) {
+                DownloadHelper.tryOpenFile(flutterPluginBinding.applicationContext, File(path))
+            }
+        } else if (call.method == "jumpBrowser") {
+            val url = call.argument<String>("url")
+            if (!url.isNullOrEmpty()) {
+                DownloadHelper.jumpBrowser(flutterPluginBinding.applicationContext, url)
+            }
         }
     }
 

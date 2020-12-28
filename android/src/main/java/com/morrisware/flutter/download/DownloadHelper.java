@@ -183,16 +183,18 @@ public class DownloadHelper {
         context.startActivity(intent);
     }
 
-    public static void jumpBrowser(Activity activity, String url) {
+    public static void jumpBrowser(Context context, String url) {
         Intent intent = new Intent();
         intent.setAction("android.intent.action.VIEW");
         Uri content_url = Uri.parse(url);
         intent.setData(content_url);
-        if (intent.resolveActivity(activity.getPackageManager()) != null) {
-//            final ComponentName componentName = intent.resolveActivity(context.getPackageManager());
-            activity.startActivity(Intent.createChooser(intent, "请选择浏览器"));
+        if (intent.resolveActivity(context.getPackageManager()) != null) {
+            if (!(context instanceof Activity)) {
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            }
+            context.startActivity(Intent.createChooser(intent, "请选择浏览器"));
         } else {
-            showToast(activity, "没有匹配的程序");
+            showToast(context, "没有匹配的程序");
         }
     }
 
